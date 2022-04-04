@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINA LUXURY</title>
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/img/275438300_1160172491410578_1214367331655605342_n.jpg">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <!-- Start header -->
+    <div class="wrapper">
+        <header id="header">
+            <div class="header__nav">
+                <ul class="header__nav-items">
+                    <li class="header__nav-item">
+                        <a href="#" class="nav-logo">
+                            <img src="./assets/img/275438300_1160172491410578_1214367331655605342_n.jpg" alt="MINA LUXURY Logo" style="width: 40px; height: 40px; border-radius: 50%;"> MINA LUXURY
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <div class="header__nav-item-location">
+                            <a href="#" class="nav-item">
+                                Địa chỉ
+                            </a>
+                        </div>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="nav-text-box">
+                            <input type="text" placeholder="Tìm mẫu hoa">
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="nav-item">
+                            <ion-icon class=search-icon name="search"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <div class="header__nav-item-language">
+                            <a href="#" class="nav-item">
+                                Ngôn Ngữ
+                            </a>
+                        </div>
+                    </li>
+                    <li class="header__nav-item">
+                        <div class="header__nav-item-login">
+                            <a href="#" class="nav-item">
+                                Đăng nhập & Đăng Ký
+                           </a>
+                        </div>
+                    </li>
+                    <li class="header__nav-item">
+                        <div class="header__nav-item-cart">
+                            <a href="#" class="nav-item">
+                                <ion-icon class="nav_cart" name="cart-outline"></ion-icon>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- Start Second navigation -->
+            <div class="second__nav">
+                <div class="wrap__second-nav">
+                    <ul class="second__nav-items">
+                        <li class="second__nav-item">
+                            <a class="second__nav-item-home" href="#">
+                                <ion-icon name="home-outline"></ion-icon>
+                                Trang Chủ
+                            </a>
+                        </li>
+                        <li class="second__nav-item">
+                            <a class="second__nav-item-introduction" href="#">
+                                <ion-icon name="information-circle-outline"></ion-icon>
+                                Giới thiệu
+                            </a>
+                        </li>
+                        <li class="second__nav-item">
+                            <a class="second__nav-item-kind" href="#">
+                                <ion-icon name="rose-outline"></ion-icon>
+                                Loại hoa
+                            </a>
+                        </li>
+                        <li class="second__nav-item">
+                            <a class="second__nav-item-service" href="#">
+                                <ion-icon name="rose-outline"></ion-icon>
+                                Dịch vụ
+                            </a>
+                        </li>
+                        <li class="second__nav-item">
+                            <a class="second__nav-item-branch" href="#">
+                                <ion-icon name="git-branch-outline"></ion-icon>
+                                Chi nhánh
+                            </a>
+                        </li>
+                        <li class="second__nav-item">
+                            <a class="second__nav-item-contact" href="#">
+                                <ion-icon name="call-outline"></ion-icon>
+                                Liên hệ
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- End Second navigation -->
+        </header>
+    </div>
+    <!-- End header -->
+
+
+
+    <p id="demo"></p>
+    <script>
+        const iphoneEquipments = [
+            "typeC",
+            "typeD",
+            "earpots",
+            "microphone"
+        ]
+
+        let text = "<ul>";
+        iphoneEquipments.foreach(printElements);
+        text += "</ul>";
+
+        function printElements(value) {
+            text += "<li>" + value + "</li>";
+        }
+
+        document.getElementById("demo").innerHTML = text;
+    </script>
+
+
+</body>
+
+</html>
